@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: rgb(80, 73, 73);
+}
+
+.informacao {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: brown;
+}
+
+.informacao a {
+    margin-left: 20px;
+    color: brown;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+.informacao h1 {
+    font-size: 2.5em;
+}
+
+header .informacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    background-color: rgb(39, 39, 39);
+    height: 70px;
+    margin-bottom: 42px;
+}
+
+#loja {
+    display: flex;
+    margin-top: 26px;
+}
+
+#loja img {
+    border-radius: 25px;
+    margin-left: 11%;
+    border: 3px solid rgb(133, 10, 10);
+}
+
+.texto {
+    margin-left: 22px;
+    margin-right: 11%;
+}
+
+.texto h2 {
+    font-size: 30px;
+    color: rgb(133, 10, 10);
+}
+
+.linha1 {
+    border: 2px solid;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    color: rgb(133, 10, 10);
+    margin-right: 10px;
+}
+
+.linha2 {
+    border: 2px solid;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    color: rgb(133, 10, 10);
+    margin-right: 280px;
+}
+
+#prod h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(133, 10, 10);
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.produtos img {
+    max-width: 80%;
+    border-radius: 30px;
+    border: 3px solid rgb(133, 10, 10);
+    transition: transform 0.5s;
+}
+
+.produtos img:hover {
+    transform: scale(1.05);
+    opacity: 0.93;
+}
+
+.produtos h3 {
+    font-size: 1.5em;
+}
+
+.produtos button {
+    height: 7%;
+    width: 80%;
+    border-radius: 7px;
+    font-size: 1.2em;
+    background-color: brown;
+    color: aliceblue;
+    border: 1px solid brown;
+}
+
+.produtos article {
+    max-width: 340px;
+}
+
+aside {
+    margin-left: 190px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(39, 39, 39);
+    color: aliceblue;
+    height: 50px;
+    padding: 15px 0;
+}
+
+.credito p {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .informacao {
+        max-width: 90%;
+    }
+    .informacao h1 {
+        font-size: 1.8em;
+    }
+    .informacao a {
+        font-size: 1.3em;
+    }
+    #loja {
+        display: block;
+    }
+    #loja img {
+        max-width: 80%;
+    }
+    .texto {
+        justify-content: center;
+    }
+    .texto h2 {
+        font-size: 1.5em;
+    }
+    main {
+        align-items: center;
+    }
+    .produtos {
+        display: block;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .produtos article {
+        margin-bottom: 25px;
+    }
+    .produtos img {
+        max-width: 80%;
+        min-width: 60%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .informacao {
+        max-width: 90%;
+    }
+    .informacao h1 {
+        font-size: 1.8em;
+    }
+    .informacao a {
+        font-size: 1.3em;
+    }
+    #loja {
+        display: block;
+    }
+    #loja img {
+        max-width: 80%;
+    }
+    .texto {
+        justify-content: center;
+    }
+    .texto h2 {
+        font-size: 1.5em;
+    }
+    main {
+        align-items: center;
+    }
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 42%);
+        column-gap: 1%;
+        row-gap: 5%;
+        margin-bottom: 80px;
+        margin-top: 20px;
+    }
+    .produtos article {
+        margin-bottom: 25px;
+    }
+    .produtos img {
+        max-width: 80%;
+        min-width: 60%;
+    }
+}
